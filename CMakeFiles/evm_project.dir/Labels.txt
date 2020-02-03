@@ -1,0 +1,14 @@
+# Target labels
+ evm_project
+# Source files and their labels
+/Users/jafri/eosio.contracts/contracts/evm/CMakeFiles/evm_project
+/Users/jafri/eosio.contracts/contracts/evm/CMakeFiles/evm_project.rule
+/Users/jafri/eosio.contracts/contracts/evm/CMakeFiles/evm_project-complete.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-install.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-mkdir.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-download.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-update.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-patch.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-configure.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-build.rule
+/Users/jafri/eosio.contracts/contracts/evm/evm_project-prefix/src/evm_project-stamp/evm_project-test.rule
