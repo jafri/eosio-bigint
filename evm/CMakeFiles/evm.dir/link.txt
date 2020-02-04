@@ -1,1 +1,1 @@
-/Users/jafri/eosio.cdt/build/bin/eosio-ld  CMakeFiles/evm.dir/div.obj CMakeFiles/evm.dir/evm.obj CMakeFiles/evm.dir/utils.obj CMakeFiles/evm.dir/transfer.obj CMakeFiles/evm.dir/disassembler.obj CMakeFiles/evm.dir/util.obj CMakeFiles/evm.dir/stack.obj -o evm.wasm 
+/Users/jafri/eosio.cdt/build/bin/eosio-ld  CMakeFiles/evm.dir/disassembler.obj CMakeFiles/evm.dir/div.obj CMakeFiles/evm.dir/evm.obj CMakeFiles/evm.dir/processor.obj CMakeFiles/evm.dir/stack.obj CMakeFiles/evm.dir/transaction.obj CMakeFiles/evm.dir/transfer.obj CMakeFiles/evm.dir/util.obj -o evm.wasm 

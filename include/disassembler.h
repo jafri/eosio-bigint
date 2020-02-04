@@ -9,7 +9,7 @@
 #include <algorithm>
 #include <map>
 #include <set>
-// #include <sstream>
+#include <sstream>
 #include <vector>
 
 namespace eevm
@@ -142,10 +142,9 @@ namespace eevm
       // give names to jump dests
       for (auto dest : reverse_lookup[Opcode::JUMPDEST])
       {
-        // TODO ADD BACK
-        // std::stringstream comment;
-        // comment << "loc_" << std::dec << dest->pc;
-        // dest->comment = comment.str();
+        std::stringstream comment;
+        comment << "loc_" << std::dec << dest->pc;
+        dest->comment = comment.str();
       }
 
       auto jumps = reverse_lookup[Opcode::JUMP];
@@ -162,19 +161,17 @@ namespace eevm
         // is the preceding instruction a push?
         if (!prev->op.has_immediate())
           continue;
-        // TODO ADD BACK
-        // std::stringstream comment;
+        std::stringstream comment;
         const auto target_address =
           static_cast<uint64_t>(prev->get_immediate());
         const auto target = d.instrs.find(target_address);
-        // TODO ADD BACK
-        // if (
-        //   target == d.instrs.end() ||
-        //   target->second->op.opcode != Opcode::JUMPDEST)
-        //   comment << "illegal target";
-        // else
-        //   comment << "branches to " << target->second->comment;
-        // jump->comment = comment.str();
+        if (
+          target == d.instrs.end() ||
+          target->second->op.opcode != Opcode::JUMPDEST)
+          comment << "illegal target";
+        else
+          comment << "branches to " << target->second->comment;
+        jump->comment = comment.str();
       }
       return d;
     }

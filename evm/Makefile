@@ -169,6 +169,21 @@ evm.s:
 .PHONY : evm.s
 
 # target to build an object file
+processor.obj:
+	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/processor.obj
+.PHONY : processor.obj
+
+# target to preprocess a source file
+processor.i:
+	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/processor.i
+.PHONY : processor.i
+
+# target to generate assembly for a file
+processor.s:
+	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/processor.s
+.PHONY : processor.s
+
+# target to build an object file
 stack.obj:
 	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/stack.obj
 .PHONY : stack.obj
@@ -182,6 +197,21 @@ stack.i:
 stack.s:
 	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/stack.s
 .PHONY : stack.s
+
+# target to build an object file
+transaction.obj:
+	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/transaction.obj
+.PHONY : transaction.obj
+
+# target to preprocess a source file
+transaction.i:
+	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/transaction.i
+.PHONY : transaction.i
+
+# target to generate assembly for a file
+transaction.s:
+	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/transaction.s
+.PHONY : transaction.s
 
 # target to build an object file
 transfer.obj:
@@ -213,21 +243,6 @@ util.s:
 	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/util.s
 .PHONY : util.s
 
-# target to build an object file
-utils.obj:
-	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/utils.obj
-.PHONY : utils.obj
-
-# target to preprocess a source file
-utils.i:
-	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/utils.i
-.PHONY : utils.i
-
-# target to generate assembly for a file
-utils.s:
-	$(MAKE) -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/utils.s
-.PHONY : utils.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,18 +261,21 @@ help:
 	@echo "... evm.obj"
 	@echo "... evm.i"
 	@echo "... evm.s"
+	@echo "... processor.obj"
+	@echo "... processor.i"
+	@echo "... processor.s"
 	@echo "... stack.obj"
 	@echo "... stack.i"
 	@echo "... stack.s"
+	@echo "... transaction.obj"
+	@echo "... transaction.i"
+	@echo "... transaction.s"
 	@echo "... transfer.obj"
 	@echo "... transfer.i"
 	@echo "... transfer.s"
 	@echo "... util.obj"
 	@echo "... util.i"
 	@echo "... util.s"
-	@echo "... utils.obj"
-	@echo "... utils.i"
-	@echo "... utils.s"
 .PHONY : help
 
 
