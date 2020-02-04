@@ -1,6 +1,7 @@
 #pragma once
 
 #include <eosio/eosio.hpp>
+#include "eosio/datastream.hpp"
 #include <div.hpp>
 
 using uint256_t = intx::uint256;
@@ -19,11 +20,12 @@ using namespace std;
  *  @tparam N - Number of bits
  *  @return datastream<Stream>& - Reference to the datastream
  */
-template<typename Stream, std::size_t N>
-eosio::datastream<Stream>& operator<< ( eosio::datastream<Stream>& ds, const intx::uint<N>& v ) {
+template<typename Stream>
+eosio::datastream<Stream>& operator<< ( eosio::datastream<Stream>& ds, const uint256_t& v ) {
     auto bytes = intx::as_bytes(v);
-    for( const auto& i : bytes )
-        ds << i;
+    for(auto i = 0; i < 32; i++) {
+      ds << bytes[i];
+    }
     return ds;
 }
 
@@ -37,12 +39,12 @@ eosio::datastream<Stream>& operator<< ( eosio::datastream<Stream>& ds, const int
  *  @tparam N - Number of bits
  *  @return datastream<Stream>& - Reference to the datastream
  */
-template<typename Stream, std::size_t N>
-eosio::datastream<Stream>& operator>> ( eosio::datastream<Stream>& ds, intx::uint<N>& v ) {
+template<typename Stream>
+eosio::datastream<Stream>& operator>> ( eosio::datastream<Stream>& ds, uint256_t& v ) {
     uint8_t tmp[32];
     for( auto& i : tmp )
         ds >> i;
-    v = intx::be::load<N>(tmp);
+    v = intx::be::load<uint256_t>(tmp);
     return ds;
 }
 
@@ -56,7 +58,7 @@ CONTRACT test : public contract {
 
     TABLE Account {
       uint64_t id;
-      uint256_t nonce;
+      uint256_t nonce = 0u;
       uint64_t primary_key() const { return id; };
 
       EOSLIB_SERIALIZE(Account, (nonce));
