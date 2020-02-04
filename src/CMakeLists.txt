@@ -1,4 +1,4 @@
-project(evm)
+project(evm_project)
 
 set(EOSIO_WASM_OLD_BEHAVIOR "Off")
 find_package(eosio.cdt)
