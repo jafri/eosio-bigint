@@ -4,11 +4,15 @@
 #include "eosio/datastream.hpp"
 #include <div.hpp>
 
-using uint256_t = intx::uint256;
+using checksum256 = intx::uint256;
 using uint512_t = intx::uint512;
 
 using namespace eosio;
 using namespace std;
+
+namespace jafri {
+  using checksum256 = intx::uint256;
+}
 
 /**
  *  Serialize a fixed size int
@@ -21,7 +25,7 @@ using namespace std;
  *  @return datastream<Stream>& - Reference to the datastream
  */
 template<typename Stream>
-eosio::datastream<Stream>& operator<< ( eosio::datastream<Stream>& ds, const uint256_t& v ) {
+eosio::datastream<Stream>& operator<< ( eosio::datastream<Stream>& ds, const jafri::checksum256& v ) {
     auto bytes = intx::as_bytes(v);
     for(auto i = 0; i < 32; i++) {
       ds << bytes[i];
@@ -40,11 +44,11 @@ eosio::datastream<Stream>& operator<< ( eosio::datastream<Stream>& ds, const uin
  *  @return datastream<Stream>& - Reference to the datastream
  */
 template<typename Stream>
-eosio::datastream<Stream>& operator>> ( eosio::datastream<Stream>& ds, uint256_t& v ) {
+eosio::datastream<Stream>& operator>> ( eosio::datastream<Stream>& ds, jafri::checksum256& v ) {
     uint8_t tmp[32];
     for( auto& i : tmp )
         ds >> i;
-    v = intx::be::load<uint256_t>(tmp);
+    v = intx::be::load<jafri::checksum256>(tmp);
     return ds;
 }
 
@@ -56,9 +60,11 @@ CONTRACT test : public contract {
       : contract(receiver, code, ds),
         _accounts(receiver, receiver.value) {}
 
+    ACTION create ( const jafri::checksum256& a);
+
     TABLE Account {
       uint64_t id;
-      uint256_t nonce = 0u;
+      jafri::checksum256 nonce;
       uint64_t primary_key() const { return id; };
 
       EOSLIB_SERIALIZE(Account, (id)(nonce));

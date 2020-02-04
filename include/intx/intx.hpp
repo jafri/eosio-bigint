@@ -21,7 +21,7 @@ struct uint
     static_assert((N & (N - 1)) == 0, "Number of bits must be power of 2");
     static_assert(N >= 256, "Number of bits must be at lest 256");
 
-    using word_type = uint64_t;
+    using word_type = uint128_t;
 
     /// The 2x smaller type.
     using half_type = uint<N / 2>;
