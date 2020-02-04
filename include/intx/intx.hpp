@@ -987,7 +987,7 @@ inline void store(uint8_t (&dst)[N / 8], const intx::uint<N>& x) noexcept
 }  // namespace le
 
 
-namespace be  // Conversions to/from BE bytes.
+namespace be   // Conversions to/from BE bytes.
 {
 /// Loads an uint value from bytes of big-endian order.
 /// If the size of bytes is smaller than the result uint, the value is zero-extended.

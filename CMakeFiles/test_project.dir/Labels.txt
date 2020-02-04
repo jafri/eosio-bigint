@@ -1,0 +1,14 @@
+# Target labels
+ test_project
+# Source files and their labels
+/Users/jafri/eosio.contracts/contracts/test/CMakeFiles/test_project
+/Users/jafri/eosio.contracts/contracts/test/CMakeFiles/test_project.rule
+/Users/jafri/eosio.contracts/contracts/test/CMakeFiles/test_project-complete.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-install.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-mkdir.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-download.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-update.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-patch.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-configure.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-build.rule
+/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-test.rule

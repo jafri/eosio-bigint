@@ -1,9 +1,9 @@
-project(evm_project)
+project(test_project)
 
 set(EOSIO_WASM_OLD_BEHAVIOR "Off")
 find_package(eosio.cdt)
 
-add_contract( evm evm disassembler.cpp div.cpp evm.cpp processor.cpp stack.cpp transaction.cpp transfer.cpp util.cpp)
-target_include_directories( evm PUBLIC ${CMAKE_SOURCE_DIR}/../include )
+add_contract( test test test.cpp div.cpp )
+target_include_directories( test PUBLIC ${CMAKE_SOURCE_DIR}/../include )
 
-target_ricardian_directory( evm ${CMAKE_SOURCE_DIR}/../ricardian )
+target_ricardian_directory( test ${CMAKE_SOURCE_DIR}/../ricardian )

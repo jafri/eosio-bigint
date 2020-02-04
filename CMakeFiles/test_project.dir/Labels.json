@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/CMakeFiles/test_project"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/CMakeFiles/test_project.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/CMakeFiles/test_project-complete.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-install.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-mkdir.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-download.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-update.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-patch.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-configure.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-build.rule"
+		},
+		{
+			"file" : "/Users/jafri/eosio.contracts/contracts/test/test_project-prefix/src/test_project-stamp/test_project-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"test_project"
+		],
+		"name" : "test_project"
+	}
+}
