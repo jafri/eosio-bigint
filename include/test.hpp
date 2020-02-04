@@ -61,7 +61,7 @@ CONTRACT test : public contract {
       uint256_t nonce = 0u;
       uint64_t primary_key() const { return id; };
 
-      EOSLIB_SERIALIZE(Account, (nonce));
+      EOSLIB_SERIALIZE(Account, (id)(nonce));
     };
     typedef multi_index<"account"_n, Account> account_table;
     account_table _accounts;
