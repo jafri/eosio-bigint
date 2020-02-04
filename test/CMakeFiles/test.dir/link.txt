@@ -1,1 +1,0 @@
-/Users/jafri/eosio.cdt/build/bin/eosio-ld  CMakeFiles/test.dir/test.obj CMakeFiles/test.dir/div.obj -o test.wasm 

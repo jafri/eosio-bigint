@@ -1,3 +1,0 @@
-/Users/jafri/eosio.contracts/contracts/test/test/CMakeFiles/rebuild_cache.dir
-/Users/jafri/eosio.contracts/contracts/test/test/CMakeFiles/edit_cache.dir
-/Users/jafri/eosio.contracts/contracts/test/test/CMakeFiles/test.dir
