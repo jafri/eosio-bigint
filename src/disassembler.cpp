@@ -150,5 +150,5 @@ namespace eevm
     EVM_OPCODE(CALLCODE),
     EVM_OPCODE(RETURN),
     EVM_OPCODE(DELEGATECALL),
-    EVM_OPCODE(DESTROY)};
+    EVM_OPCODE(SELFDESTRUCT)};
 } // namespace eevm

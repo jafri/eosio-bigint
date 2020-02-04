@@ -153,6 +153,6 @@ namespace eevm
     RETURN,
     DELEGATECALL,
 
-    DESTROY = 0xff
+    SELFDESTRUCT = 0xff
   };
 } // namespace eevm
