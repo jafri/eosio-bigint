@@ -3,8 +3,8 @@
 
 #pragma once
 #include <iomanip>
-// #include <nlohmann/json.hpp>
-// #include <sstream>
+#include <nlohmann/json.hpp>
+#include <sstream>
 
 namespace intx
 {
@@ -49,23 +49,23 @@ namespace intx
   }
 
   // to/from json converters
-  // template <unsigned N>
-  // void to_json(nlohmann::json& j, const uint<N>& n)
-  // {
-  //   std::stringstream ss;
-  //   ss << "0x" << to_string(n, 16);
-  //   j = ss.str();
-  // }
+  template <unsigned N>
+  void to_json(nlohmann::json& j, const uint<N>& n)
+  {
+    std::stringstream ss;
+    ss << "0x" << to_string(n, 16);
+    j = ss.str();
+  }
 
-  // template <unsigned N>
-  // void from_json(const nlohmann::json& j, uint<N>& n)
-  // {
-  //   if (!j.is_string())
-  //   {
-  //     eosio::check(false, "intx numbers can only be parsed from hex-string");
-  //   }
+  template <unsigned N>
+  void from_json(const nlohmann::json& j, uint<N>& n)
+  {
+    if (!j.is_string())
+    {
+      eosio::check(false, "intx numbers can only be parsed from hex-string");
+    }
 
-  //   const auto s = j.get<std::string>();
-  //   n = from_string<uint<N>>(s);
-  // }
+    const auto s = j.get<std::string>();
+    n = from_string<uint<N>>(s);
+  }
 }

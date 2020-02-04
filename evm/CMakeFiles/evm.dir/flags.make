@@ -6,5 +6,5 @@ CXX_FLAGS =  -O3    -abigen -abigen_output=/Users/jafri/eosio.contracts/contract
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/jafri/eosio.contracts/contracts/evm/src/../include 
+CXX_INCLUDES = -I/Users/jafri/eosio.contracts/contracts/evm/src/../include -I/usr/local/Cellar/boost/1.71.0/include 
 

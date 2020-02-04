@@ -7,16 +7,18 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/disassembler.obj"
   "/Users/jafri/eosio.contracts/contracts/evm/src/div.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/div.obj"
   "/Users/jafri/eosio.contracts/contracts/evm/src/evm.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/evm.obj"
+  "/Users/jafri/eosio.contracts/contracts/evm/src/processor.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/processor.obj"
   "/Users/jafri/eosio.contracts/contracts/evm/src/stack.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/stack.obj"
+  "/Users/jafri/eosio.contracts/contracts/evm/src/transaction.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/transaction.obj"
   "/Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/transfer.obj"
   "/Users/jafri/eosio.contracts/contracts/evm/src/util.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/util.obj"
-  "/Users/jafri/eosio.contracts/contracts/evm/src/utils.cpp" "/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles/evm.dir/utils.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Users/jafri/eosio.contracts/contracts/evm/src/../include"
+  "/usr/local/Cellar/boost/1.71.0/include"
   )
 
 # Targets to which this target links.

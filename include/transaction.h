@@ -4,7 +4,7 @@
 #pragma once
 #include "address.h"
 
-// #include <nlohmann/json.hpp>
+#include <nlohmann/json.hpp>
 #include <vector>
 
 namespace eevm
@@ -23,12 +23,12 @@ namespace eevm
 
     bool operator==(const LogEntry& that) const;
 
-    // friend void to_json(nlohmann::json&, const LogEntry&);
-    // friend void from_json(const nlohmann::json&, LogEntry&);
+    friend void to_json(nlohmann::json&, const LogEntry&);
+    friend void from_json(const nlohmann::json&, LogEntry&);
   };
 
-  // void to_json(nlohmann::json&, const LogEntry&);
-  // void from_json(const nlohmann::json&, LogEntry&);
+  void to_json(nlohmann::json&, const LogEntry&);
+  void from_json(const nlohmann::json&, LogEntry&);
 
   struct LogHandler
   {

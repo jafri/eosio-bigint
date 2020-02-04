@@ -57,9 +57,24 @@ include CMakeFiles/evm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/evm.dir/flags.make
 
+CMakeFiles/evm.dir/disassembler.obj: CMakeFiles/evm.dir/flags.make
+CMakeFiles/evm.dir/disassembler.obj: /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp
+CMakeFiles/evm.dir/disassembler.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/evm.dir/disassembler.obj"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/disassembler.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp
+
+CMakeFiles/evm.dir/disassembler.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/disassembler.i"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp > CMakeFiles/evm.dir/disassembler.i
+
+CMakeFiles/evm.dir/disassembler.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/disassembler.s"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp -o CMakeFiles/evm.dir/disassembler.s
+
 CMakeFiles/evm.dir/div.obj: CMakeFiles/evm.dir/flags.make
 CMakeFiles/evm.dir/div.obj: /Users/jafri/eosio.contracts/contracts/evm/src/div.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/evm.dir/div.obj"
+CMakeFiles/evm.dir/div.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/evm.dir/div.obj"
 	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/div.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/div.cpp
 
 CMakeFiles/evm.dir/div.i: cmake_force
@@ -72,7 +87,8 @@ CMakeFiles/evm.dir/div.s: cmake_force
 
 CMakeFiles/evm.dir/evm.obj: CMakeFiles/evm.dir/flags.make
 CMakeFiles/evm.dir/evm.obj: /Users/jafri/eosio.contracts/contracts/evm/src/evm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/evm.dir/evm.obj"
+CMakeFiles/evm.dir/evm.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/evm.dir/evm.obj"
 	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/evm.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/evm.cpp
 
 CMakeFiles/evm.dir/evm.i: cmake_force
@@ -83,61 +99,24 @@ CMakeFiles/evm.dir/evm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/evm.s"
 	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/evm.cpp -o CMakeFiles/evm.dir/evm.s
 
-CMakeFiles/evm.dir/utils.obj: CMakeFiles/evm.dir/flags.make
-CMakeFiles/evm.dir/utils.obj: /Users/jafri/eosio.contracts/contracts/evm/src/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/evm.dir/utils.obj"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/utils.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/utils.cpp
+CMakeFiles/evm.dir/processor.obj: CMakeFiles/evm.dir/flags.make
+CMakeFiles/evm.dir/processor.obj: /Users/jafri/eosio.contracts/contracts/evm/src/processor.cpp
+CMakeFiles/evm.dir/processor.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/evm.dir/processor.obj"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/processor.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/processor.cpp
 
-CMakeFiles/evm.dir/utils.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/utils.i"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/utils.cpp > CMakeFiles/evm.dir/utils.i
+CMakeFiles/evm.dir/processor.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/processor.i"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/processor.cpp > CMakeFiles/evm.dir/processor.i
 
-CMakeFiles/evm.dir/utils.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/utils.s"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/utils.cpp -o CMakeFiles/evm.dir/utils.s
-
-CMakeFiles/evm.dir/transfer.obj: CMakeFiles/evm.dir/flags.make
-CMakeFiles/evm.dir/transfer.obj: /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/evm.dir/transfer.obj"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/transfer.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp
-
-CMakeFiles/evm.dir/transfer.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/transfer.i"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp > CMakeFiles/evm.dir/transfer.i
-
-CMakeFiles/evm.dir/transfer.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/transfer.s"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp -o CMakeFiles/evm.dir/transfer.s
-
-CMakeFiles/evm.dir/disassembler.obj: CMakeFiles/evm.dir/flags.make
-CMakeFiles/evm.dir/disassembler.obj: /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/evm.dir/disassembler.obj"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/disassembler.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp
-
-CMakeFiles/evm.dir/disassembler.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/disassembler.i"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp > CMakeFiles/evm.dir/disassembler.i
-
-CMakeFiles/evm.dir/disassembler.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/disassembler.s"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/disassembler.cpp -o CMakeFiles/evm.dir/disassembler.s
-
-CMakeFiles/evm.dir/util.obj: CMakeFiles/evm.dir/flags.make
-CMakeFiles/evm.dir/util.obj: /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/evm.dir/util.obj"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/util.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp
-
-CMakeFiles/evm.dir/util.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/util.i"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp > CMakeFiles/evm.dir/util.i
-
-CMakeFiles/evm.dir/util.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/util.s"
-	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp -o CMakeFiles/evm.dir/util.s
+CMakeFiles/evm.dir/processor.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/processor.s"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/processor.cpp -o CMakeFiles/evm.dir/processor.s
 
 CMakeFiles/evm.dir/stack.obj: CMakeFiles/evm.dir/flags.make
 CMakeFiles/evm.dir/stack.obj: /Users/jafri/eosio.contracts/contracts/evm/src/stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/evm.dir/stack.obj"
+CMakeFiles/evm.dir/stack.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/evm.dir/stack.obj"
 	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/stack.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/stack.cpp
 
 CMakeFiles/evm.dir/stack.i: cmake_force
@@ -148,29 +127,73 @@ CMakeFiles/evm.dir/stack.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/stack.s"
 	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/stack.cpp -o CMakeFiles/evm.dir/stack.s
 
+CMakeFiles/evm.dir/transaction.obj: CMakeFiles/evm.dir/flags.make
+CMakeFiles/evm.dir/transaction.obj: /Users/jafri/eosio.contracts/contracts/evm/src/transaction.cpp
+CMakeFiles/evm.dir/transaction.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/evm.dir/transaction.obj"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/transaction.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/transaction.cpp
+
+CMakeFiles/evm.dir/transaction.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/transaction.i"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/transaction.cpp > CMakeFiles/evm.dir/transaction.i
+
+CMakeFiles/evm.dir/transaction.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/transaction.s"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/transaction.cpp -o CMakeFiles/evm.dir/transaction.s
+
+CMakeFiles/evm.dir/transfer.obj: CMakeFiles/evm.dir/flags.make
+CMakeFiles/evm.dir/transfer.obj: /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp
+CMakeFiles/evm.dir/transfer.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/evm.dir/transfer.obj"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/transfer.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp
+
+CMakeFiles/evm.dir/transfer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/transfer.i"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp > CMakeFiles/evm.dir/transfer.i
+
+CMakeFiles/evm.dir/transfer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/transfer.s"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/transfer.cpp -o CMakeFiles/evm.dir/transfer.s
+
+CMakeFiles/evm.dir/util.obj: CMakeFiles/evm.dir/flags.make
+CMakeFiles/evm.dir/util.obj: /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp
+CMakeFiles/evm.dir/util.obj: /Users/jafri/eosio.contracts/contracts/evm/src/../ricardian/evm.contracts.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/evm.dir/util.obj"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evm.dir/util.obj -c /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp
+
+CMakeFiles/evm.dir/util.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evm.dir/util.i"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp > CMakeFiles/evm.dir/util.i
+
+CMakeFiles/evm.dir/util.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evm.dir/util.s"
+	/Users/jafri/eosio.cdt/build/bin/eosio-cpp $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jafri/eosio.contracts/contracts/evm/src/util.cpp -o CMakeFiles/evm.dir/util.s
+
 # Object files for target evm
 evm_OBJECTS = \
+"CMakeFiles/evm.dir/disassembler.obj" \
 "CMakeFiles/evm.dir/div.obj" \
 "CMakeFiles/evm.dir/evm.obj" \
-"CMakeFiles/evm.dir/utils.obj" \
+"CMakeFiles/evm.dir/processor.obj" \
+"CMakeFiles/evm.dir/stack.obj" \
+"CMakeFiles/evm.dir/transaction.obj" \
 "CMakeFiles/evm.dir/transfer.obj" \
-"CMakeFiles/evm.dir/disassembler.obj" \
-"CMakeFiles/evm.dir/util.obj" \
-"CMakeFiles/evm.dir/stack.obj"
+"CMakeFiles/evm.dir/util.obj"
 
 # External object files for target evm
 evm_EXTERNAL_OBJECTS =
 
+evm.wasm: CMakeFiles/evm.dir/disassembler.obj
 evm.wasm: CMakeFiles/evm.dir/div.obj
 evm.wasm: CMakeFiles/evm.dir/evm.obj
-evm.wasm: CMakeFiles/evm.dir/utils.obj
-evm.wasm: CMakeFiles/evm.dir/transfer.obj
-evm.wasm: CMakeFiles/evm.dir/disassembler.obj
-evm.wasm: CMakeFiles/evm.dir/util.obj
+evm.wasm: CMakeFiles/evm.dir/processor.obj
 evm.wasm: CMakeFiles/evm.dir/stack.obj
+evm.wasm: CMakeFiles/evm.dir/transaction.obj
+evm.wasm: CMakeFiles/evm.dir/transfer.obj
+evm.wasm: CMakeFiles/evm.dir/util.obj
 evm.wasm: CMakeFiles/evm.dir/build.make
 evm.wasm: CMakeFiles/evm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable evm.wasm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jafri/eosio.contracts/contracts/evm/evm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable evm.wasm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/evm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

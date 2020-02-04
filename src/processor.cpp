@@ -1,13 +1,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License.
+// Licensed under the MIT License..
 
-#include "eEVM/processor.h"
-
-#include "eEVM/bigint.h"
-#include "eEVM/exception.h"
-#include "eEVM/opcode.h"
-#include "eEVM/stack.h"
-#include "eEVM/util.h"
+#include <evm.hpp>
 
 #include <algorithm>
 #include <exception>
@@ -206,15 +200,17 @@ namespace eevm
       // run
       while (ctxt->get_pc() < ctxt->prog.code.size())
       {
-        try
-        {
-          dispatch();
-        }
-        catch (Exception& ex)
-        {
-          ctxt->eh(ex);
-          pop_context();
-        }
+        // TODO handle exception
+        // try
+        // {
+        //   dispatch();
+        // }
+        // catch (Exception& ex)
+        // {
+        //   ctxt->eh(ex);
+        //   pop_context();
+        // }
+        dispatch();
 
         if (!ctxt)
           break;
