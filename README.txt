@@ -1,9 +1,8 @@
 --- Test Project ---
 
  - How to Build -
-   - cd to 'build' directory
-   - run the command 'cmake ..'
-   - run the command 'make'
+   - `cmake .`
+   - `make`
 
  - After build -
    - The built smart contract is under the 'test' directory in the 'build' directory
